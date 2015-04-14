@@ -1,0 +1,75 @@
+{
+	"pathForImages":"images/",
+	"categories":[
+		{
+			"id":1,
+			"name":"Pen",
+			"price":1000,
+			"Description":"Description of Pen",
+			"image":"pen.jpeg"
+		},
+		{
+			"id":2,
+			"name":"Pencil",
+			"price":15,
+			"Description":"Description of Pencil",
+			"image":"pencil.jpg"
+		},
+		{
+			"id":3,
+			"name":"Notebook",
+			"price":50,
+			"Description":"Description of Notebook",
+			"image":"notebook.jpg"
+		},
+		{
+			"id":4,
+			"name":"Bottle",
+			"price":400,
+			"Description":"Description of Bottle",
+			"image":"bottle.jpg"
+		},
+		{
+			"id":5,
+			"name":"Tiffin",
+			"price":150,
+			"Description":"Description of Tiffin",
+			"image":"tiffin.jpg"
+		},
+		{
+			"id":6,
+			"name":"Tiffin",
+			"price":150,
+			"Description":"Description of Tiffin",
+			"image":"tiffin.jpg"
+		},
+		{
+			"id":7,
+			"name":"Tiffin",
+			"price":150,
+			"Description":"Description of Tiffin",
+			"image":"tiffin.jpg"
+		},
+		{
+			"id":8,
+			"name":"Tiffin",
+			"price":150,
+			"Description":"Description of Tiffin",
+			"image":"tiffin.jpg"
+		},
+		{
+			"id":9,
+			"name":"Tiffin",
+			"price":150,
+			"Description":"Description of Tiffin last one",
+			"image":"tiffin.jpg"
+		},
+		{
+			"id":9,
+			"name":"mouse",
+			"price":150,
+			"Description":"Description of Tiffin last one",
+			"image":"tiffin.jpg"
+		}
+	]
+}

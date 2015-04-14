@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>First Page</title>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/angular.min.js"></script>
+		<script src="js/script.js"></script>
+		<link rel="stylesheet" href="css/style.css" type="text/css"/>
+		<link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css" type="text/css"/>
+	</head>
+	<body ng-app="myApp">
+		<div class="barContainer container">
+			<input type="number" ng-model="width1"/>
+			<div class="actualBar" ng-controller="playController" style="width:{{width1}}px; border:1px solid #000; height:35px;">
+				<div class="progressHead" style="width:{{PlayHead}}%; background-color:{{color}}; height:35px;"  ng-click="stop()"></div>
+				<input type="button" class="btn btn-info" ng-click="start()" value="button"/>
+				<div class="jsonDataContainer" ng-controller="DdController">
+					<select id="selectDd" name="category">
+					</select>
+				</div>
+				<div class="tableContainer table-responsive">
+					<table id="table1" class="table table-striped">
+						<tr><th>Name</th><th>Price</th></tr>
+					</table>
+				</div>
+				<div id="alertContainer" class="alert" role="alert">
+					<div id="alertBox">
+						<div id="header" class="header">
+							<div class="heading" id="heading"></div>
+							<div class="close" id="closeBtn">X</div>
+						</div>
+						<div id="DescContainer" class="DescContainer"></div>
+					</div>
+				</div>
+				<div class="DragNdropContainer">
+					<div class="drag1" id="drag1" draggable="true" ondragstart="drag(event)">hfghfgh</div>
+					<div class="drop1" id="drop1" ondragover="allowDrop(event)" ondrop="drop(event)">gdfsgdfsg</div>
+				</div>
+			</div> 
+		</div>
+		<script>
+			function drag(ev) {
+					ev.dataTransfer.setData("text", ev.target.id);
+				}
+			function drop(ev) {
+					 ev.preventDefault();
+					var data = ev.dataTransfer.getData("text");
+					ev.target.appendChild(document.getElementById(data));
+				}
+			function allowDrop(ev) {
+				ev.preventDefault();
+			}
+
+		</script>
+	</body>
+</html>

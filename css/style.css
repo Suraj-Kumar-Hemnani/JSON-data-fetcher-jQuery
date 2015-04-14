@@ -1,0 +1,43 @@
+#alertContainer {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+	display:none;
+}
+
+
+#alertBox {
+    background: none repeat scroll 0 0 #ffffff;
+    left: 33%;
+    padding: 20px;
+    position: absolute;
+    top: 30%;
+	/* bottom:30%; 
+	text-align: center;*/
+    width: 30%;
+}
+
+.heading {
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 0;
+    text-align: center;
+    width: 95%;
+}
+.close {
+    float: left;
+    font-size: 18px;
+    padding: 5px 0;
+    width: 5%;
+}
+.blinkingText{
+	color:red;
+}
+
+.itemImg{
+	width:100%;
+}
